@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-	<name>Advanced Biomes (Volcano Variety)</name>
+	<name>Volcano Variety (Advanced Biomes)</name>
 	<author>thakyZ</author>
 	<targetVersion>1.0.2059</targetVersion>
 	<description>Adds variety to the volcano biome of Advanced Biomes.</description>
-	<url>https://git.voidinc.net/thakyZ/advanced-biomes--volcano-variety</url>
+	<url>https://github.com/thakyZ/volcanovariety</url>
 </ModMetaData>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-	<name>Advanced Biomes (Volcano Variety) - Dev Build</name>
+	<name>Volcano Variety (Advanced Biomes) - Dev Build</name>
 	<author>thakyZ</author>
 	<targetVersion>1.0.2059</targetVersion>
 	<description>Adds variety to the volcano biome of Advanced Biomes. 
 (This is the dev version of Advanced Biomes (Volcano Variety). The release version of About.xml is available for editing at About/About-Release.xml. Edits made on this file or on the temporary About/About.xml won't show up on the release version. Use VisualStudio to build a "Release" version of this mod when ready to upload your mod!)</description>
-	<url>https://git.voidinc.net/thakyZ/advanced-biomes--volcano-variety</url>
+	<url>https://git.voidinc.net/thakyZ/volcanovariety</url>
 </ModMetaData>
