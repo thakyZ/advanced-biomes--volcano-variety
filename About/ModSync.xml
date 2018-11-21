@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModSyncNinjaData>
+  <ID>9752bd80-110d-4694-901f-22fc835f54f1</ID>
+  <ModName>Volcano Variety (Advanced Biomes)</ModName>
+  <Version>1.0.0.1</Version>
+  <SaveBreaking>False</SaveBreaking>
+  <Host name="Github">
+    <Owner>thakyZ</Owner>
+    <Project>volcanovariety</Project>
+    <AboutDir>About</AboutDir>
+    <DownloadFrom>ModSyncReleases</DownloadFrom>
+    <Branch>master</Branch>
+  </Host>
+</ModSyncNinjaData>
