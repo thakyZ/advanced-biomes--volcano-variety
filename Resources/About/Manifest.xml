@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <Manifest>
   <identifier>VolcanoVariety</identifier>
-  <version>1.0.0.1</version>
+  <version>1.0.2</version>
   <dependencies>
     <li>AdvancedBiomes</li>
   </dependencies>
@@ -9,6 +9,6 @@
     <li>AdvancedBiomes</li>
   </loadAfter>
   <showCrossPromotions>false</showCrossPromotions>
-  <manifestUri>https://raw.githubusercontent.com/thakyZ/volcanovariety/master/About/Manifest.xml</manifestUri>
+  <manifestUri>https://raw.githubusercontent.com/thakyZ/volcanovariety/master/Resources/About/Manifest.xml</manifestUri>
   <downloadUri>https://github.com/thakyZ/volcanovariety/releases/latest</downloadUri>
 </Manifest>

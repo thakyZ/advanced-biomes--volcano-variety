@@ -2,13 +2,13 @@
 <ModSyncNinjaData>
   <ID>9752bd80-110d-4694-901f-22fc835f54f1</ID>
   <ModName>Volcano Variety (Advanced Biomes)</ModName>
-  <Version>1.0.0.1</Version>
+  <Version>1.0.2</Version>
   <SaveBreaking>False</SaveBreaking>
   <Host name="Github">
     <Owner>thakyZ</Owner>
     <Project>volcanovariety</Project>
-    <AboutDir>About</AboutDir>
-    <DownloadFrom>ModSyncReleases</DownloadFrom>
+    <AboutDir>Resources/About</AboutDir>
+    <DownloadPage>Releases</DownloadPage>
     <Branch>master</Branch>
   </Host>
 </ModSyncNinjaData>

@@ -3,7 +3,14 @@
 
 
 # User-specific files (MonoDevelop/Xamarin Studio)
+.vs/
 *.userprefs
+*.user
+[Dd]ist/
+*.user
+*.bat
+Libraries/*
+!Libraries/README.md
 
 # Build results
 [Dd]ebug/
