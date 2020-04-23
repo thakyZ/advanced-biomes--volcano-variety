@@ -9,7 +9,8 @@
     <RootNamespace>VolcanoVariety</RootNamespace>
     <AssemblyName>VolcanoVariety</AssemblyName>
     <UseMSBuildEngine>False</UseMSBuildEngine>
-    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -20,6 +21,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <ConsolePause>false</ConsolePause>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>full</DebugType>
@@ -28,9 +30,10 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <ConsolePause>false</ConsolePause>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="0Harmony">
+    <Reference Include="0Harmony, Version=2.0.0.8, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>Libraries\0Harmony.dll</HintPath>
     </Reference>
     <Reference Include="BiomesPlus">
@@ -65,13 +68,11 @@
   </ItemGroup>
   <ItemGroup>
     <None Include=".editorconfig" />
+    <None Include="1.0\Assemblies\0Harmony.dll" />
+    <None Include="1.0\Assemblies\VolcanoVariety.dll" />
+    <None Include="1.0\Assemblies\THIRD-PARTY-LICENSES" />
+    <None Include="build.ps1" />
     <None Include="Resources\About\About.xml">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Resources\About\About-Debug.xml">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="Resources\About\About-Release.xml">
       <SubType>Designer</SubType>
     </None>
     <None Include="LICENSE" />
@@ -81,16 +82,8 @@
     <None Include="Resources\About\Preview.png" />
     <None Include="Resources\About\Preview.psd" />
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
-    <PostBuildEvent>if exist $(ProjectDir)\bin\$(ConfigurationName)\VolcanoVariety.dll (
-	robocopy $(ProjectDir)Resources $(ProjectDir)dist\VolcanoVariety\ /e /MIR
-	xcopy $(ProjectDir)LICENSE. $(ProjectDir)dist\VolcanoVariety\ /Y
-	xcopy $(ProjectDir)bin\Release\VolcanoVariety.dll $(ProjectDir)dist\VolcanoVariety\Assemblies\ /Y
-	xcopy $(ProjectDir)Libraries\0Harmony.dll $(ProjectDir)dist\VolcanoVariety\Assemblies\ /Y
-	xcopy $(ProjectDir)THIRD-PARTY-LICENSES. $(ProjectDir)dist\VolcanoVariety\Assemblies\ /Y
-	exit /b 0
-) else (
-	echo Cannot build mod distribution directory. $(ConfigurationName) build not found in bin\$(ConfigurationName) directory.
-)</PostBuildEvent>
+    <PostBuildEvent>powershell.exe -noprofile -file $(ProjectDir)\build.ps1 -ProjectDir $(ProjectDir) -ConfigurationName $(ConfigurationName)</PostBuildEvent>
   </PropertyGroup>
 </Project>
